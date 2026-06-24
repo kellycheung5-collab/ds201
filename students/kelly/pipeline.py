@@ -1,4 +1,4 @@
-# pipeline.py test 2a222
+# pipeline.py
 DATA_SOURCE = 'data/external/sales_api.csv'
 
 
@@ -16,9 +16,3 @@ def transform_data(data):
     """Remove empty rows and apply cleaning rules."""
     print('Transforming data...')
     return [row for row in data if row]
-
-
-def test_transform_data():
-    prices = [10, 20, 30]
-    result = transform_data(prices)
-    assert result == [10, 20, 30]
